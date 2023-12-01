@@ -2,7 +2,7 @@ from sqlalchemy.orm import registry, relationship, Session
 from sqlalchemy import Column, String, Integer, create_engine, ForeignKey, select
 
 engine = create_engine(
-    "mysql+mysqlconnector://testuser:testpass123@localhost:3306/books", echo=True
+    "mysql+mysqlconnector://<username>:<password>@localhost:3306/books", echo=True
 )
 
 mapper_registry = registry()
